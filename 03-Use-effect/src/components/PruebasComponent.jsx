@@ -30,6 +30,7 @@ export const PruebasComponent = () => {
     }, [usuario])
 
 
+
   return (
     <div className='pruebas'>
 
