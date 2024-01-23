@@ -18,7 +18,7 @@ function App() {
       <hr />
         {/* CONTENIDO CURSO */}
       <h1>Formularios</h1>
-
+ <p>hola</p>
       
 
     </>
