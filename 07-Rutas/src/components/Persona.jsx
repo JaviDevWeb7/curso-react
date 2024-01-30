@@ -1,11 +1,13 @@
 
 import React from 'react'
+import { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom'
 
 export const Persona = () => {
 
     const { name, lastName } = useParams();
     let navegar = useNavigate()
+    const [oracion,setOracion]=useState('')
 
 
     const redirigir = (e) => {
@@ -16,7 +18,7 @@ export const Persona = () => {
         if(name.length <= 0 || lastName.length <= 0){
             navegar("/inicio")
         }else{
-            navegar('/articulos')
+            setOracion(`${name} ${lastName}`)
         }
     }
 
@@ -25,6 +27,8 @@ export const Persona = () => {
         {!name && <h1>no hay nombre</h1>}
         
         {name && <h1>Pagina de {name} {lastName}</h1>}
+
+        <h1>{oracion}</h1>
 
         <form onSubmit={redirigir}>
             <input type="text" name='name' />

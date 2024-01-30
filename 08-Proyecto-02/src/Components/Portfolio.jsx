@@ -1,7 +1,14 @@
-import React from 'react'
+import React from "react";
+import { ListadoProyects } from "./ListadoProyects";
 
 export const Portfolio = () => {
   return (
-    <div>Portfolio</div>
-  )
-}
+    <div className="page">
+      <h1 className="heading">Portafolio</h1>
+
+      <ListadoProyects />
+
+  
+    </div>
+  );
+};

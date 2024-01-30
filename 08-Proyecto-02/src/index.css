@@ -1,10 +1,13 @@
-*{
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
 
+*{
+    font-family: 'Comfortaa', sans-serif;
 }
+
 .layout{
     width: 85%;
     margin: 0 auto;
+        
 }
 
 .header{
@@ -33,9 +36,9 @@
 .header .logo span{
     padding: 0;
     display: block;
-    font-size: 85px;
-    font-weight: bolder;
-    margin-top: -16px;
+    font-size: 83px;
+    font-weight: bold;
+    margin-top: 4px;
 }
 
 .header nav{
@@ -64,7 +67,167 @@
     transition: all 300ms;
 }
 
-.header a:hover{
+.header a:hover,
+.header .active{
     color: #fa4529;
 }
+
+.content{
+    min-height: 570px;
+}
+
+.footer{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 80px;
+    padding-top: 45px;
+    background-color: #f5f5f5;
+    min-height: 50px;
+    line-height: 7px;
+    border-top: 3px solid black;
+    color: #444;
+}
+
+.home h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 60px;
+    margin-bottom: 0;
+    margin-top: 80px;
+}
+
+.home h2{
+    color: #444;
+    font-weight: lighter;
+}
+
+.home a{
+    color: #fa4529;
+    text-decoration: none;
+    padding: 7px;
+}
+
+.home a:hover{
+    color: #fa4529;
+    text-decoration: underline;
+}
+
+.home strong{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fa4529;
+}
+
+.home p{
+    color: #444;
+}
+
+.page .heading,
+.home .heading{
+    font-size: 40px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 0;
+}
+
+.page .heading{
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input{
+    width: 18%;
+    margin-bottom: 25px;
+    padding: 17px;
+}
+
+.contact textarea{
+    width: 18%;
+    margin-bottom: 25px;
+    padding: 17px;
+    font-size: 15px;
+}
+
+.contact .buttonContact{
+    width: 6%;
+    background-color: #fa4529;
+    border: none;
+    border-radius: 8px;
+    color: #f5f5f5;
+    transition: all 300ms;
+}
+
+.contact .buttonContact:hover{
+    background-color: black;
+    cursor: pointer;
+    width: 8%;
+}
+
+.works{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.workItem{
+    flex-grow: 1;
+    flex-basis: 30%;
+    margin: 30px;
+}
+
+.pageWork .mask,
+.workItem .mask{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border: solid 1px #ddd;
+    box-shadow: 0px 5px 15px rgb(99, 98, 98);
+}
+
+
+.workItem img{
+    color: gray;
+    width: 105%;
+    margin-left: -20px;
+    transition: all 500ms;
+}
+
+.workItem .mask:hover img{
+    width: 125%;
+}
+
+.workItem h2{
+    margin-top: 7px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.workItem a{
+    color: black;
+    text-decoration: none;
+    transition: all 300ms;
+}
+
+.workItem a:hover{
+    color: #fa4529;
+}
+
+.workItem h3{
+    color: #444;
+    margin-top: 0;
+    padding-top: 13px;
+    border-top: 1px solid #ddd;
+}
+
+.pageWork img{
+    color: gray;
+    width: 105%;
+    margin-top: -200px;
+}
+
 
