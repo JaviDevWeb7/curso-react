@@ -1,0 +1,25 @@
+.cajaTarea{
+    display: flex;
+    justify-content: space-between;
+    width: 253px;
+    background-color: gray;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+    margin-top: 5px;
+    
+}
+
+.cajaTarea button{
+    margin-right: 18px;
+    background-color: gray;
+    border: none;
+    cursor: pointer;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: cadetblue;
+    padding: 20px;
+}
